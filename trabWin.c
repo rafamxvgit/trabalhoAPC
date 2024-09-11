@@ -15,15 +15,15 @@ void supremeGetChar(){while (getchar() != '\n');}
 
 void welcomeMessage(){
     system("cls");
-    printf("'tudo isso que está entre aspas é o título do jogo.'\n pressione <enter> ");
+    printf("'tudo isso que esta entre aspas eh o titulo do jogo.'\n pressione <enter> ");
     supremeGetChar();
 }
 
 char menu(){
     system("cls");
     printf("1 - jogar\n");
-    printf("2 - configurações\n");
-    printf("3 - instruções\n");
+    printf("2 - configuracoes\n");
+    printf("3 - instrucoes\n");
     printf("4 - ranking\n");
     printf("5 - sair\n\n");   
     printf("digite numero ");
@@ -51,7 +51,7 @@ void zeraRank(){
 char setDiff(){
     system("cls");
     printf("1 - iniciante\n");
-    printf("2 - intermediário\n");
+    printf("2 - intermediario\n");
     printf("3 - avançado\n\n");
     printf("digite numero ");
     char ch = getchar();
@@ -61,9 +61,9 @@ char setDiff(){
 
 void instruc(){
     system("cls");
-    printf("Sério que você precisa mesmo de instruções? Patético...\n");
-    printf("A única coisa que importa é a seguinte: a ordem de entrada das cordenadas é coluna primeiro e depois linha.\n");
-    printf("Já falei mais do que eu devia. Agora joga.\n");
+    printf("Serio que voce precisa mesmo de instrucoes? Patetico...\n");
+    printf("A unica coisa que importa eh a seguinte: a ordem de entrada das cordenadas eh coluna primeiro e depois linha.\n");
+    printf("Ja falei mais do que eu devia. Agora joga.\n");
     supremeGetChar();
 }
 
@@ -308,7 +308,7 @@ void jogo(int size){
         if (!getCoord(&x, &y)){return;}
 
         if (x > (size-1) || y > (size-1)){
-            printf("ERR 01: coordenada inválida\n");
+            printf("ERR 01: coordenada invalida\n");
             getchar();
             goto start;
         }
